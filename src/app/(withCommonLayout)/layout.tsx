@@ -1,16 +1,18 @@
-
+import "../globals.css";
 import Footer from "@/Component/shared/footer/Footer";
 import Navbar from "@/Component/shared/navbar/Navbar";
 import React from "react";
 
-const CommonLayout = ({ children }: { children: React.ReactNode }) => {
+const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
-      <Navbar />
-      {children}
-      <Footer />
-    </>
+    <html lang="en">
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 };
 
-export default CommonLayout;
+export default layout;
