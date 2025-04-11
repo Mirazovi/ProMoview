@@ -21,7 +21,8 @@ const Navbar = () => {
           <div className="flex items-center gap-5 text-xl text-gray-300">
             <button className="hover:text-white transition"><SearchIcons /></button>
             <button className="hover:text-white transition"><SunThemeIcons /></button>
-            <button className="hover:text-white transition"><ProfileIcons /></button>
+            <Link href={'/dashboard'}>            <button className="hover:text-white transition"><ProfileIcons /></button>
+            </Link>
           </div>
         </div>
       </Container>
